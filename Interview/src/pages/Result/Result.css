@@ -1,0 +1,40 @@
+.result-page {
+  padding: 30px;
+  text-align: center;
+}
+
+.score-box {
+  margin: 20px 0;
+}
+
+.score {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.feedback-box {
+  margin: 20px 0;
+}
+
+.answers-box {
+  margin-top: 30px;
+}
+
+.answer-card {
+  background: #f5f5f5;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.retry-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

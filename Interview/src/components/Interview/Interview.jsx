@@ -17,7 +17,7 @@ function Interview() {
     "Tell me about yourself"
   );
 
-  // ✅ NEW: question list (AI-like)
+ 
   const questions = [
     "Tell me about yourself",
     "Explain your latest project",
@@ -28,10 +28,8 @@ function Interview() {
 
   const [index, setIndex] = useState(0);
 
-  // ✅ NEW: store answers properly
   const [answers, setAnswers] = useState([]);
 
-  // TIMER
   useEffect(() => {
     if (!recording) return;
     const timer = setInterval(() => {
@@ -46,7 +44,7 @@ function Interview() {
     return () => clearInterval(timer);
   }, [recording]);
 
-  // CAMERA
+ 
   useEffect(() => {
     startCamera();
   }, []);
@@ -92,7 +90,7 @@ function Interview() {
 
   stopRecording();
 
-  // ✅ FIX: create updated answers manually
+ 
   const updatedAnswers = [
     ...answers,
     {
@@ -103,12 +101,10 @@ function Interview() {
 
   setAnswers(updatedAnswers);
 
-  // Fake AI thinking
   await new Promise(res => setTimeout(res, 1000));
 
   const nextIndex = index + 1;
 
-  // ✅ LIMIT + NAVIGATION (FIXED)
   if (nextIndex >= questions.length) {
     navigate("/result", {
       state: { answers: updatedAnswers }

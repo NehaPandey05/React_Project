@@ -1,4 +1,4 @@
-/* PAGE */
+
 .dashboard-page {
   width: 100%;
   min-height: 100vh;
@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* HERO SECTION */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,7 +23,7 @@
 .gradient-text {
   font-size: 42px;
   font-weight: 700;
-  color: #2563eb;   /* fallback visible color */
+  color: #2563eb;   
 }
 .subtitle {
   margin: 20px 0;
@@ -56,7 +55,7 @@
 }
 
 
-/* ROLES SECTION */
+
 .roles {
   max-width: 1200px;
   margin: 80px auto 0;
@@ -86,7 +85,7 @@
 }
 
 
-/* STEPS */
+
 .steps {
   max-width: 1200px;
   margin: 80px auto 0;
@@ -111,7 +110,7 @@
 }
 
 
-/* STATS */
+
 .stats {
   max-width: 1200px;
   margin: 80px auto 0;
@@ -131,7 +130,7 @@
 }
 
 
-/* ANIMATION */
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -144,7 +143,7 @@
 }
 
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
